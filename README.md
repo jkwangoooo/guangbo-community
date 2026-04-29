@@ -2,6 +2,11 @@
 
 这是一个可直接发布到 GitHub Pages 的纯静态页面项目。
 
+## 线上地址
+
+- GitHub Pages: https://jkwangoooo.github.io/guangbo-community/
+- 国内备用直链: https://cdn.jsdelivr.net/gh/jkwangoooo/guangbo-community@main/index.html
+
 ## 本地文件
 
 - `index.html`

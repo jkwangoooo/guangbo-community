@@ -40,7 +40,7 @@ body {
   overflow-x: hidden;
   color: var(--ink);
   font-family: "Microsoft YaHei", "PingFang SC", "Heiti SC", "SimHei", sans-serif;
-  background: linear-gradient(180deg, oklch(92.8% 0.024 244) 0%, oklch(86.6% 0.07 240) 52%, oklch(81.8% 0.09 232) 100%);
+  background: linear-gradient(180deg, oklch(97.2% 0.012 244) 0%, oklch(93.6% 0.036 240) 52%, oklch(90.8% 0.052 232) 100%);
 }
 
 .page-aura {
@@ -49,7 +49,7 @@ body {
   pointer-events: none;
   z-index: 0;
   overflow: hidden;
-  background: linear-gradient(180deg, oklch(92.8% 0.024 244) 0%, oklch(86.6% 0.07 240) 52%, oklch(81.8% 0.09 232) 100%);
+  background: linear-gradient(180deg, oklch(97.2% 0.012 244) 0%, oklch(93.6% 0.036 240) 52%, oklch(90.8% 0.052 232) 100%);
 }
 
 .page-aura__blob,
@@ -74,7 +74,7 @@ body {
   left: -24vmax;
   top: -22vmax;
   background:
-    radial-gradient(circle at 42% 48%, oklch(58% 0.24 220 / 1) 0%, oklch(74% 0.16 226 / 0.82) 38%, transparent 70%);
+    radial-gradient(circle at 42% 48%, oklch(73% 0.17 220 / 0.92) 0%, oklch(86% 0.09 226 / 0.66) 38%, transparent 70%);
   animation: page-field-one 7.5s ease-in-out infinite alternate;
 }
 
@@ -82,7 +82,7 @@ body {
   right: -26vmax;
   top: -18vmax;
   background:
-    radial-gradient(circle at 48% 44%, oklch(60% 0.25 240 / 0.98) 0%, oklch(74% 0.17 238 / 0.8) 40%, transparent 72%);
+    radial-gradient(circle at 48% 44%, oklch(74% 0.18 240 / 0.9) 0%, oklch(86% 0.1 238 / 0.64) 40%, transparent 72%);
   animation: page-field-two 2s ease-in-out infinite alternate;
 }
 
@@ -92,7 +92,7 @@ body {
   width: 62vmax;
   height: 62vmax;
   background:
-    radial-gradient(circle at 50% 50%, oklch(62% 0.2 198 / 0.92) 0%, oklch(76% 0.13 206 / 0.72) 42%, transparent 72%);
+    radial-gradient(circle at 50% 50%, oklch(76% 0.13 198 / 0.82) 0%, oklch(88% 0.07 206 / 0.56) 42%, transparent 72%);
   animation: page-field-three 10s ease-in-out infinite alternate;
 }
 
@@ -102,7 +102,7 @@ body {
   width: 64vmax;
   height: 64vmax;
   background:
-    radial-gradient(circle at 48% 44%, oklch(64% 0.2 252 / 0.88) 0%, oklch(78% 0.12 246 / 0.68) 44%, transparent 74%);
+    radial-gradient(circle at 48% 44%, oklch(78% 0.12 252 / 0.76) 0%, oklch(90% 0.064 246 / 0.5) 44%, transparent 74%);
   animation: page-field-four 2s ease-in-out infinite alternate;
 }
 
@@ -114,7 +114,7 @@ body {
   border-radius: 50px;
   opacity: 1;
   background:
-    radial-gradient(ellipse at 50% 8%, oklch(58% 0.22 224 / 0.82) 0%, oklch(74% 0.13 232 / 0.62) 36%, transparent 72%);
+    radial-gradient(ellipse at 50% 8%, oklch(74% 0.15 224 / 0.68) 0%, oklch(88% 0.08 232 / 0.44) 36%, transparent 72%);
   filter: blur(34px);
   will-change: transform, opacity;
   animation: page-diffusion-float 2s ease-in-out infinite alternate;
