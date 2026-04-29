@@ -1,0 +1,8 @@
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+.vercel
+dist
+node_modules
+宣传页/_screenshots
