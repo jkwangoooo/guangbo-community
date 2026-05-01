@@ -105,25 +105,25 @@
       vec2 p = uv - pointer;
       p.x *= u_resolution.x / u_resolution.y;
 
-      float pointerFalloff = exp(-dot(p, p) * 5.2);
-      float rippleFalloff = exp(-dot(p, p) * 11.0);
+      float pointerFalloff = exp(-dot(p, p) * 3.6);
+      float rippleFalloff = exp(-dot(p, p) * 7.2);
       vec2 velocity = u_velocity * vec2(1.0, -1.0);
       vec2 momentum = u_momentum * vec2(1.0, -1.0);
-      float speed = clamp(length(momentum) * 4.2 + length(velocity) * 1.8, 0.0, 1.8);
+      float speed = clamp(length(momentum) * 5.4 + length(velocity) * 2.4, 0.0, 2.35);
 
       vec2 flow = vec2(
-        fbm(st * 1.15 + vec2(u_time * 0.145, -u_time * 0.092)),
-        fbm(st * 1.10 + vec2(-u_time * 0.105, u_time * 0.130))
+        fbm(st * 1.15 + vec2(u_time * 0.210, -u_time * 0.135)),
+        fbm(st * 1.10 + vec2(-u_time * 0.155, u_time * 0.190))
       ) - 0.5;
 
       vec2 silkUv = st;
       silkUv += flow * 0.155;
-      silkUv += momentum * pointerFalloff * 0.62;
-      silkUv += normalize(p + 0.0001) * rippleFalloff * speed * 0.045;
-      silkUv = rotate2d(-0.075 + 0.050 * sin(u_time * 0.38)) * silkUv;
+      silkUv += momentum * pointerFalloff * 0.92;
+      silkUv += normalize(p + 0.0001) * rippleFalloff * speed * 0.078;
+      silkUv = rotate2d(-0.075 + 0.052 * sin(u_time * 0.58)) * silkUv;
 
-      float longFold = sin((silkUv.x * 1.75 - silkUv.y * 1.10) * PI + u_time * 0.78);
-      float crossFold = sin((silkUv.x * 0.62 + silkUv.y * 2.08) * PI - u_time * 0.54);
+      float longFold = sin((silkUv.x * 1.75 - silkUv.y * 1.10) * PI + u_time * 1.12);
+      float crossFold = sin((silkUv.x * 0.62 + silkUv.y * 2.08) * PI - u_time * 0.82);
       float smallCrease = sin((silkUv.x * 5.6 - silkUv.y * 3.2) * PI + fbm(silkUv * 2.2) * 3.1);
       float folds = longFold * 0.54 + crossFold * 0.28 + smallCrease * 0.13;
 
@@ -153,7 +153,7 @@
       field += sheetLight * 0.38;
       field += sheetTop * 0.14;
       field -= leftShade * 0.12;
-      field += pointerFalloff * speed * 0.11;
+      field += pointerFalloff * speed * 0.19;
 
       vec3 color = palette(clamp(field, 0.0, 1.0));
 
@@ -179,8 +179,8 @@
       sheen += pow(abs(crossFold * 0.5 + 0.5), 7.0) * 0.10;
       color += vec3(0.50, 0.72, 0.92) * sheen * (0.55 + upperSheet * 0.72);
 
-      float pointerSheen = rippleFalloff * speed * (0.22 + 0.20 * sin(length(p) * 24.0 - u_time * 8.0));
-      color += vec3(0.48, 0.78, 1.00) * pointerSheen;
+      float pointerSheen = rippleFalloff * speed * (0.30 + 0.24 * sin(length(p) * 24.0 - u_time * 11.0));
+      color += vec3(0.52, 0.82, 1.00) * pointerSheen;
 
       float grain = hash(frag / max(u_pixelRatio, 1.0) + u_time) - 0.5;
       color += grain * 0.018;
@@ -312,10 +312,10 @@
     pointer.x += (pointer.tx - pointer.x) * (0.28 * dt);
     pointer.y += (pointer.ty - pointer.y) * (0.28 * dt);
 
-    pointer.mx += pointer.vx * (0.40 * dt);
-    pointer.my += pointer.vy * (0.40 * dt);
+    pointer.mx += pointer.vx * (0.54 * dt);
+    pointer.my += pointer.vy * (0.54 * dt);
 
-    const damping = Math.pow(pointer.active ? 0.890 : 0.932, dt);
+    const damping = Math.pow(pointer.active ? 0.905 : 0.948, dt);
     pointer.mx *= damping;
     pointer.my *= damping;
     pointer.vx *= Math.pow(0.72, dt);
