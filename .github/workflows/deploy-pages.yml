@@ -35,6 +35,7 @@ jobs:
           rm -rf dist
           mkdir -p dist
           cp index.html styles.css .nojekyll dist/
+          cp -r "项目介绍页" dist/
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
