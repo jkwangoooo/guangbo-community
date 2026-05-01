@@ -1,0 +1,12 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">&#x5149;&#x6CE2;&#x793E;&#x7FA4; logo concept 02 - Wave Path</title>
+  <desc id="desc">A smooth signal path connecting three nodes, representing a clear community growth route.</desc>
+  <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M18 60 C32 34 45 34 56 50 S74 70 86 38" stroke-width="5"/>
+    <path d="M18 72 C35 52 47 52 58 62 S75 72 86 56" stroke-width="2.2" opacity="0.38"/>
+    <circle cx="18" cy="60" r="5.6" fill="currentColor" stroke="none"/>
+    <circle cx="56" cy="50" r="7.2" fill="currentColor" stroke="none"/>
+    <circle cx="86" cy="38" r="5.6" fill="currentColor" stroke="none"/>
+    <circle cx="72" cy="64" r="2.6" fill="currentColor" stroke="none" opacity="0.46"/>
+  </g>
+</svg>

@@ -1,0 +1,14 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">&#x5149;&#x6CE2;&#x793E;&#x7FA4; logo concept 06 - Prism Route</title>
+  <desc id="desc">A prism-like route map, turning dispersed light into an actionable path.</desc>
+  <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M21 68 L50 18 L79 68 Z" stroke-width="4"/>
+    <path d="M34 68 L50 40 L66 68" stroke-width="2.8" opacity="0.56"/>
+    <path d="M24 68 H76" stroke-width="4"/>
+    <path d="M18 42 H36" stroke-width="2.6" opacity="0.5"/>
+    <path d="M64 42 H82" stroke-width="2.6" opacity="0.5"/>
+    <circle cx="50" cy="18" r="4.6" fill="currentColor" stroke="none"/>
+    <circle cx="21" cy="68" r="3.6" fill="currentColor" stroke="none"/>
+    <circle cx="79" cy="68" r="3.6" fill="currentColor" stroke="none"/>
+  </g>
+</svg>

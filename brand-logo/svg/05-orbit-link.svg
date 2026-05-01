@@ -1,0 +1,13 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">&#x5149;&#x6CE2;&#x793E;&#x7FA4; logo concept 05 - Orbit Link</title>
+  <desc id="desc">An orbital link system, balancing community connection with a stable central anchor.</desc>
+  <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+    <ellipse cx="50" cy="50" rx="34" ry="15" stroke-width="3" transform="rotate(-24 50 50)"/>
+    <ellipse cx="50" cy="50" rx="34" ry="15" stroke-width="2.2" opacity="0.48" transform="rotate(26 50 50)"/>
+    <circle cx="50" cy="50" r="9" fill="currentColor" stroke="none"/>
+    <circle cx="24" cy="37" r="4.4" fill="currentColor" stroke="none"/>
+    <circle cx="76" cy="63" r="4.4" fill="currentColor" stroke="none"/>
+    <circle cx="72" cy="31" r="2.6" fill="currentColor" stroke="none" opacity="0.52"/>
+    <circle cx="28" cy="69" r="2.6" fill="currentColor" stroke="none" opacity="0.52"/>
+  </g>
+</svg>
